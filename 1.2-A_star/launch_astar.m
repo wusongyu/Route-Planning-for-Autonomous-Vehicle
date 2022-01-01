@@ -1,5 +1,6 @@
 clear;clc;
 %%配置参数：道路地图、起始点、目标点等
+% 2022.1.1 test : added a //
 tmp_map = imread('Map_png\HNU-Line-480x780.png');  %读取备好的道路地图
 n = graythresh(tmp_map);    %获得一个合适的阈值，以便图像二值化处理
 imp = ~im2bw(tmp_map,n);    %图像二值化处理
